@@ -122,12 +122,15 @@ def get_sqrt(i):
 
 # write a python program to print the maximum integer in a list of integers
 lst = [10, 20, 30, 40]
+print(max(lst))
 
 # write a python program to print the minimum integer in a list of integers
 lst = [10, 20, 30, 40]
+print(min(lst))
 
 # write a python program to print a random number between 0 and 1
 import random
+print(random.random())
 
 # write a python program to concatenate two strings and print
 str1 = 'hello'
