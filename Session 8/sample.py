@@ -289,7 +289,6 @@ else:
    while count < nterms:
        print(n1)
        nth = n1 + n2
-       # update values
        n1 = n2
        n2 = nth
        count += 1
@@ -302,9 +301,7 @@ X = [[12,7],
 result = [[0,0,0],
          [0,0,0]]
 
-# iterate through rows
 for i in range(len(X)):
-   # iterate through columns
    for j in range(len(X[0])):
        result[j][i] = X[i][j]
 
@@ -397,13 +394,10 @@ vowels = 'aeiou'
 
 ip_str = 'Hello, have you tried our tutorial section yet?'
 
-# make it suitable for caseless comparisions
 ip_str = ip_str.casefold()
 
-# make a dictionary with each vowel a key and value 0
 count = {}.fromkeys(vowels,0)
 
-# count the vowels
 for char in ip_str:
    if char in count:
        count[char] += 1
